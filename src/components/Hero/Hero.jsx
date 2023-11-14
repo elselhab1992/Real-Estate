@@ -2,6 +2,7 @@ import "./Hero.css";
 import hero from "/hero-image.png";
 import CountUp from "react-countup";
 import { IoMdPin } from "react-icons/io";
+import { easeIn, motion } from "framer-motion";
 
 const Hero = () => {
   return (
@@ -9,11 +10,15 @@ const Hero = () => {
       <div className="hero-container">
         {/* left side */}
         <div className="hero-text">
-          <h1>
+          <motion.h1
+            initial={{ y: "2rem", opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 2, type: easeIn }}
+          >
             Discover
             <br /> Most Suitable
             <br /> Property
-          </h1>
+          </motion.h1>
 
           <p>
             Find a variety of properties that suit you very easilty
@@ -49,9 +54,14 @@ const Hero = () => {
           </div>
         </div>
         {/* rigth side */}
-        <div className="img-container">
+        <motion.div
+          className="img-container"
+          initial={{ x: "7rem", opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ duration: 2, type: easeIn }}
+        >
           <img src={hero} alt="hero" />
-        </div>
+        </motion.div>
       </div>
     </section>
   );
