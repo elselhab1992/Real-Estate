@@ -1,0 +1,52 @@
+.started-section {
+  width: 100%;
+  margin: 30px auto;
+}
+
+.started-conrainer {
+  width: 65%;
+  color: #fff;
+  background-color: var(--blue);
+  text-align: center;
+  margin: auto;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.started-conrainer h3 {
+  margin: 25px auto;
+  font-size: 35px;
+}
+
+.started-conrainer p {
+  margin-bottom: 30px;
+}
+
+.started-conrainer button {
+  width: 130px;
+  padding: 12px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #fff;
+  background: rgb(112, 140, 241);
+  border: 2px solid #fff;
+  border-radius: 10px;
+  transition: all 300ms ease-in;
+}
+
+.started-conrainer button:hover {
+  scale: 1.1;
+  cursor: pointer;
+}
+
+@media (max-width: 640px) {
+  .started-conrainer {
+    width: 90%;
+    padding: 10px;
+  }
+
+  .started-conrainer h3 {
+    margin: 20px auto;
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,24 @@
+.companies-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px auto;
+}
+
+.companies-section img {
+  width: 9rem;
+  margin: 0 100px;
+}
+
+@media (max-width: 640px) {
+  .companies-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .companies-section img {
+    margin: auto;
+  }
+}

@@ -1,0 +1,110 @@
+.residencies-section {
+  width: 100%;
+  position: relative;
+}
+
+.residencies-container {
+  width: 60%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.residencies-heading h2 span {
+  color: orange;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.residencies-heading h2 {
+  color: var(--primary);
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.card {
+  max-width: max-content;
+  margin: 50px auto;
+  padding: 20px;
+  gap: 0.6rem;
+  border-radius: 20px;
+  transition: all 300ms ease-in;
+}
+
+.card:hover {
+  scale: 1.025;
+  cursor: pointer;
+  background: var(--lightBlue);
+}
+
+.card img {
+  width: 100%;
+  max-width: 15rem;
+  margin-bottom: 10px;
+}
+
+.card-info {
+  line-height: 1.5;
+}
+
+.card-info h3 {
+  font-weight: 800;
+  opacity: 0.5;
+}
+
+.card-info h3 span {
+  color: orange;
+  margin-right: 5px;
+}
+
+.card-info h4 {
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--primary);
+  margin-top: 10px;
+}
+
+.card-info p {
+  font-size: 13px;
+  width: 15rem;
+  margin-top: 10px;
+  opacity: 0.6;
+}
+
+.swiper-btns {
+  display: flex;
+  gap: 1.5rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.swiper-btns button {
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: blue;
+  background-color: var(--lightBlue);
+  border: 0;
+  padding: 5px;
+}
+
+@media (max-width: 640px) {
+  .residencies-container {
+    width: 100%;
+  }
+
+  .residencies-heading h2 {
+    font-size: 25px;
+    text-align: center;
+  }
+
+  .card {
+    max-width: max-content;
+    margin: 10px auto;
+  }
+
+  .swiper-btns {
+    position: initial;
+    justify-content: center;
+  }
+}
